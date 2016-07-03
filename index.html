@@ -1,0 +1,58 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<nav>
+    <ul class="">
+        <li >
+        <button id="login" margin-right="40px">login</button>
+            <a id="login" href="#" margin-right="40px">login</a>
+                <form id="login-form" action="script/login.php" method="post">
+                    <p><input class="text" type="text" name="username" placeholder="username" /></p>
+                    <p><input class="text" type="password" name="password" placeholder="password" /></p>
+                    <p><input class="submit" type="submit" value="submit" /></p>
+                </form>
+        </li>
+    </ul>
+</nav>
+<script>
+$("#login").click(function() {
+  $("#login-form").slideToggle();
+});
+</script>
+<style type="text/css">
+  #login {
+    list-style: none;
+  height: 40px;
+}
+
+#login a {
+    text-decoration: none;
+    color: white;
+    background-color: #666;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#login-form  {
+    position: absolute;
+    margin-top: 9px;
+    display: none;
+    float: left;
+    clear: both;
+    background-color: #666;
+    padding: 0 2% 2% 2%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#login-form .text {
+    width: 100%;
+    float: right;
+    margin-bottom: 2%;
+}
+
+#login-form .submit {
+    float: right;
+}
+</style>
